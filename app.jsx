@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, FlatList, TouchableOpacity, ScrollView, Animated, Alert, StyleSheet, Image } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { API_KEY } from '@env'; 
 
 const MovieItem = ({ item, onSelect, isFavourite }) => {
   if (!item.Poster || item.Poster === 'N/A') {
@@ -39,10 +40,10 @@ const App = () => {
   const getMovieRequest = async (searchValue) => {
     try {
       const url = searchValue 
-        ? `http://www.omdbapi.com/?s=${searchValue}&apikey=a677e6e2`
-        : `http://www.omdbapi.com/?s=top&apikey=a677e6e2`;
+      ?`http://www.omdbapi.com/?s=${searchValue}&apikey=${API_KEY}`
+      : `http://www.omdbapi.com/?s=top&apikey=${API_KEY}`;
 
-      const response = await fetch(url);
+    const response = await fetch(url);
       const responseJson = await response.json();
 
       if (responseJson.Search) {
@@ -57,7 +58,7 @@ const App = () => {
   const fetchMovieDetails = async (movie) => {
     try {
       const imdbID = typeof movie === 'string' ? movie : movie.imdbID;
-      const url = `http://www.omdbapi.com/?i=${imdbID}&apikey=a677e6e2`;
+      const url = `http://www.omdbapi.com/?i=${imdbID}&apikey=${API_KEY}`;
       const response = await fetch(url);
       const movieDetails = await response.json();
       
