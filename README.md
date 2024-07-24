@@ -26,8 +26,8 @@ The React Native Movie App allows users to search for movies, view details, and 
 
 1. *Clone the repository:*
    bash
-   git clone https://github.com/your-username/react-native-movie-app.git
-   cd react-native-movie-app
+   git clone https://github.com/arunsahu16/React_Native_MovieApp.git
+   cd React_Native_MovieApp
    
 
 2. *Install dependencies:*
@@ -60,9 +60,9 @@ The React Native Movie App allows users to search for movies, view details, and 
 ### Environment Variables:
 - Create a .env file in the root directory with the following content:
   env
-  API_KEY=a677e6e2
+  API_KEY = 
   
-- Ensure to replace a677e6e2 with your actual OMDB API key.
+- Ensure to add your actual OMDB API key.
 
 
 ## 3. Screenshots
