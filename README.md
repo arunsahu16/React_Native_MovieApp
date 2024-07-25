@@ -72,7 +72,7 @@ The React Native Movie App allows users to search for movies, view details, and 
   
   API_KEY=your_omdb_api_key
   
-- Ensure to add your actual OMDB API key {https://www.omdbapi.com/apikey.aspx}.
+- Ensure to add your actual OMDB API key { https://www.omdbapi.com/apikey.aspx }.
 
 
 ## 3. Screenshots
