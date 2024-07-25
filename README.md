@@ -24,43 +24,53 @@ The React Native Movie App allows users to search for movies, view details, and 
 
 ### Steps to Setup:
 
-1. *Clone the repository:*
-   bash
-   git clone https://github.com/arunsahu16/React_Native_MovieApp.git
-   cd React_Native_MovieApp
+1. *Clone the repository:*  <br> 
+   bash  <br> 
+   git clone https://github.com/arunsahu16/React_Native_MovieApp.git  <br> 
+   cd React_Native_MovieApp  <br> 
    
 
-2. *Install dependencies:*
+2. *Install dependencies:*  
+
    If using npm:
-   bash
+
    npm install
-   
+
    If using yarn:
-   bash
+
    yarn install
    
 
 3. *Install Pods (for iOS):*
-   bash
-   cd ios
-   pod install
-   cd ..
+
+   cd ios  <br> 
+   pod install  <br> 
+   cd ..  <br> 
    
 
-4. *Run the app:*
+4. *Run the app:*  <br> 
    For Android:
-   bash
+
    npx react-native run-android
    
    For iOS:
-   bash
+
    npx react-native run-ios
    
+### Create a'local.properties' file (for Android):
+- Navigate to the 'android' directory in your project.
+- Create a file named 'local.properties'.
+- Add the following line to the local.properties file:
+
+  sdk.dir=path/to/your/android/sdk
+
+  Replace path/to/your/android/sdk with the actual path to your Android SDK directory.
+
 
 ### Environment Variables:
 - Create a .env file in the root directory with the following content:
-  env
-  API_KEY = 
+  
+  API_KEY=your_omdb_api_key
   
 - Ensure to add your actual OMDB API key.
 
